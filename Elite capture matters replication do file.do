@@ -6,13 +6,16 @@ Date  : 21 january 2026 (last revised)
 clear
 macro drop _all
 set more off
+* Install heckprobitfixed rho
+*ssc install outreg2  // For table export
+*net install heckprobitfixedrho  // If public
 /******************************************************************************
 Set director and path for files in the folder
 *******************************************************************************/
 cd "E:\Agricultural system elite paper 2026\Data and analysis"
 *Change the director based on the location of the data files
 *Data source
-use "Elite capture baseline data_AAEA_version.dta", clear
+use "Elite capture baseline data.dta", clear
 *Setting global varibales
 global xlist1 age age_sq TotalFamilyMembers land_ha i.social_category i.education i.house_type i.economic_status mnrega i.membership_new i.homogenous_group
 global xlist2 age age_sq TotalFamilyMembers land_ha i.social_category i.education i.house_type i.economic_status mnrega i.membership_new 
@@ -112,4 +115,5 @@ twoway ///
 graph combine outcome_graph selection_graph, ///
     cols(2) graphregion(color(white)) plotregion(color(white)) ///
     
+
 
