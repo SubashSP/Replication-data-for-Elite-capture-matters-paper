@@ -11,10 +11,8 @@
  *             3. Figure: Rho sensitivity for outcome equation
  *             4. Figure: Combined rho sensitivity (outcome + selection)
  *
- * Inputs  : data/raw/elite_capture_baseline_replication.dta
- * Outputs : output/tables/Table3_final.doc
- *           output/figures/rho_sensitivity_outcome.gph  (.png)
- *           output/figures/rho_sensitivity_combined.gph (.png)
+ * Inputs  : 
+ * Outputs : 
  *
  * Notes   : Requires Stata packages: heckprobitfixedrho, outreg2
  *           Install with:
